@@ -21,6 +21,15 @@ const Nav = () => {
               </li>
             ))}
           </ul>
+          <div className="max-lg:flex gap-6 items-center">
+            <button className="text-lg text-slate-gray my-3">Sign In</button>
+            <button className="text-lg  h-[50px] text-white bg-orange-500 rounded-full px-8 py-3">
+              Sign Up
+            </button>
+          </div>
+          <div className="hidden max-lg:block">
+            <img src={hamburger} alt="Hamburger" height={25} width={25}></img>
+          </div>
         </nav>
       </header>
     </div>
