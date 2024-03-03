@@ -6,6 +6,7 @@ import ShoeCard from "../components/ShoeCard";
 import { useState } from "react";
 
 const Hero = () => {
+  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
   return (
     <section
       id="home"
@@ -44,7 +45,7 @@ const Hero = () => {
 
       <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xil:py-40 bg-primary bg-hero bg-cover bg-center">
         <img
-          src={bigShoe1}
+          src={bigShoeImg}
           alt="show collection"
           width={610}
           height={500}
@@ -55,8 +56,8 @@ const Hero = () => {
             <div key={shoe}>
               <ShoeCard
                 imageURL={shoe}
-                changeBigShoeImage={() => {}}
-                bigShoeImage=""
+                changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
+                bigShoeImage={bigShoeImg}
               />
             </div>
           ))}
