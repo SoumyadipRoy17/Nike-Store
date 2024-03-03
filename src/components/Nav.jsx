@@ -22,10 +22,19 @@ const Nav = () => {
             ))}
           </ul>
           <div className="max-lg:flex gap-6 items-center">
-            <button className="text-lg text-slate-gray my-3">Sign In</button>
+            {/* <button className="text-lg text-slate-gray my-3">Sign In</button>
             <button className="text-lg  h-[50px] text-white bg-orange-500 rounded-full px-8 py-3">
               Sign Up
-            </button>
+            </button> */}
+            <a
+              href="https://www.linkedin.com/in/soumyadip-roy-8994a3267/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <button className="text-lg  h-[50px] text-white bg-orange-500 rounded-full px-8 py-3">
+                Contact Me
+              </button>
+            </a>
           </div>
           <div className="hidden max-lg:block">
             <img src={hamburger} alt="Hamburger" height={25} width={25}></img>
